@@ -24,4 +24,17 @@
         <dimen name="spacing_large_56dp">56dp</dimen>
         <dimen name="spacing_larger_72dp">72dp</dimen>
 
+    <!--Fonts-->
+        <dimen name="font_smaller_13sp">13sp</dimen>
+        <dimen name="font_small_14sp">14sp</dimen>
+        <dimen name="font_small_15sp">15sp</dimen>
+        <dimen name="font_small_16sp">16sp</dimen>
+        <dimen name="font_small_17sp">17sp</dimen>
+        <dimen name="font_medium_20sp">20sp</dimen>
+        <dimen name="font_medium_24sp">24sp</dimen>
+        <dimen name="font_medium_34sp">34sp</dimen>
+        <dimen name="font_medium_45sp">45sp</dimen>
+        <dimen name="font_large_56sp">56sp</dimen>
+        <dimen name="font_larger_112sp">112sp</dimen>
+
 </resources>
