@@ -1,17 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.activities.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+        android:orientation="vertical"
+        tools:context=".ui.activities.MainActivity">
+
+        <!-- ScoreBox -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_huge"
+            android:background="@color/grey"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_medium_56"
+                android:orientation="horizontal">
+
+                <!-- Rating -->
+                <LinearLayout
+                    style="@style/scoreBox_sectionLayout"
+                    android:layout_weight="0.25">
+
+                    <TextView
+                        android:id="@+id/scoreBox_ratingCount"
+                        style="@style/scoreBox_text.count"
+                        android:text="@string/scoreBox_ratingCount"/>
+
+                    <TextView
+                        style="@style/scoreBox_text"
+                        android:text="@string/scoreBox_ratingText"/>
+
+                </LinearLayout>
+
+                <View style="@style/scoreBox_lineSeparator"/>
+
+                <LinearLayout
+                    style="@style/scoreBox_sectionLayout"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/scoreBox_codeCount"
+                        style="@style/scoreBox_text.count"
+                        android:text="@string/scoreBox_codeCount"/>
+
+                    <TextView
+                        style="@style/scoreBox_text"
+                        android:text="@string/scoreBox_codeText"/>
+
+                </LinearLayout>
+
+                <View style="@style/scoreBox_lineSeparator"/>
+
+                <!-- Projects -->
+                <LinearLayout
+                    style="@style/scoreBox_sectionLayout"
+                    android:layout_weight="0.25">
+
+                    <TextView
+                        android:id="@+id/scoreBox_projectsCount"
+                        style="@style/scoreBox_text.count"
+                        android:text="@string/scoreBox_projectsCount"/>
+
+                    <TextView
+                        style="@style/scoreBox_text"
+                        android:text="@string/scoreBox_projectsText"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--!Phone-->
+
+        <LinearLayout
+
+            style="@style/InformationListElement">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/ic_phone_black_24dp"/>
+
+            <LinearLayout
+               style="@style/InformationListContent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/phone_EditText"
+                        style="@style/InformationListEditText"
+                        android:hint="Мобильный телефон"
+                        android:inputType="phone"
+                        android:text="@string/phone_number"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"
+                android:src="@drawable/ic_phone_in_talk_black_24dp"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/profileItem_lineSeparator"
+            />
+
+
+        <!--Email-->
+        <LinearLayout
+
+            style="@style/InformationListElement">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/ic_email_black_24dp"/>
+
+            <LinearLayout
+                style="@style/InformationListContent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/email_EditText"
+                        style="@style/InformationListEditText"
+                        android:hint="E-mail"
+                        android:inputType="textEmailAddress"
+                        android:text="mujui@yandex.ru"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"
+                android:src="@drawable/ic_send_black_24dp"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/profileItem_lineSeparator"/>
+
+        <!-- VK -->
+        <LinearLayout
+            style="@style/InformationListElement">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/vk"
+                />
+
+            <LinearLayout
+                style="@style/InformationListContent"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <EditText
+                        android:id="@+id/vk_et"
+                        style="@style/InformationListEditText"
+                        android:hint="Профиль в VK"
+                        android:inputType="textUri"
+                        android:text="vk.com/lejus"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"
+                android:src="@drawable/ic_remove_red_eye_black_24dp"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/profileItem_lineSeparator"
+            />
+
+
+        <!-- GitHub -->
+        <LinearLayout
+            style="@style/profileItem">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/gb"/>
+
+            <LinearLayout
+                style="@style/InformationListContent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/gitHub_EditText"
+                        style="@style/InformationListEditText"
+                        android:hint="Репозиторий"
+                        android:inputType="textUri"
+                        android:text="github.com/mujui/DevIntensive"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"
+                android:src="@drawable/ic_remove_red_eye_black_24dp"/>
+
+        </LinearLayout>
+
+        <View style="@style/profileItem_lineSeparator"/>
+        <!-- About -->
+        <LinearLayout
+            style="@style/profileItem">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/account_circle"/>
+
+            <LinearLayout
+                style="@style/InformationListContent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/about_EditText"
+                        style="@style/InformationListEditText"
+                        android:hint="О себе"
+                        android:scrollHorizontally="false"
+                        android:text="Бла бла"/>
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
