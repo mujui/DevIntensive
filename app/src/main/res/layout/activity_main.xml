@@ -93,13 +93,7 @@
                 android:src="@drawable/ic_phone_black_24dp"/>
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="@dimen/spacing_larger_72dp"
-                android:layout_marginLeft="@dimen/spacing_medium_32dp"
-                android:layout_marginRight="@dimen/spacing_normal_16dp"
-                android:layout_weight="1"
-                android:gravity="bottom"
-                android:orientation="vertical">
+               style="@style/InformationListContent">
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
