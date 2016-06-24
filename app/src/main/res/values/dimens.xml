@@ -14,6 +14,7 @@
     <dimen name="size_larger_80">80dp</dimen>
 
     <!--Spaces-->
+
     <dimen name="spacing_small_8dp">8dp</dimen>
     <dimen name="spacing_normal_16dp">16dp</dimen>
     <dimen name="spacing_medial_24dp">24dp</dimen>
@@ -36,4 +37,8 @@
     <dimen name="font_medium_45sp">45sp</dimen>
     <dimen name="font_large_56sp">56sp</dimen>
     <dimen name="font_larger_112sp">112sp</dimen>
+    <!--Sizes-->
+    <dimen name="line_size">2dp</dimen>
+    <dimen name="size_huge">112dp</dimen>
+
 </resources>
