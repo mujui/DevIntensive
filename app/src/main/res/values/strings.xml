@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DevIntensive</string>
+    <string name="scoreBox_ratingText">Рейтинг</string>
+    <string name="scoreBox_ratingCount">5</string>
+    <string name="scoreBox_codeCount">5</string>
+    <string name="scoreBox_codeText">Написано строк кода</string>
+    <string name="scoreBox_projectsCount">5</string>
+    <string name="scoreBox_projectsText">Проектов</string>
+    <string name="phone_number">+7(999)999-99-99</string>
 </resources>
