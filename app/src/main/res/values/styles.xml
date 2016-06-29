@@ -1,10 +1,11 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/color_Primary</item>
         <item name="colorPrimaryDark">@color/color_Primary_Dark</item>
         <item name="colorAccent">@color/color_Accent</item>
+
     </style>
 
     <style name="icon">
@@ -93,4 +94,29 @@
         <item name="android:layout_marginTop">@dimen/spacing_small_8dp</item>
         <item name="android:layout_marginBottom">@dimen/spacing_small_8dp</item>
     </style>
+
+    <style name="custom_dialog">
+        <item name="android:fullDark">@android:color/transparent</item>
+    </style>
+
+    <style name="header_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_small_14sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+
+
+
 </resources>
